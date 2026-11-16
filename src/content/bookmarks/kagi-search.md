@@ -1,5 +1,6 @@
 ---
 title: "Kagi Search"
 url: "https://kagi.com/"
-tags: ["Search"]
+tags: ["Tool"]
+comment: "Ad-free, paid search with user aligned features"
 ---
