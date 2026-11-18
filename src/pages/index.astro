@@ -4,200 +4,287 @@ const github = 'https://github.com/quinnphil';
 const booking = 'https://cal.com/philquinn';
 
 const services = [
-  {
-    number: '01',
-    title: 'Reporting & dashboards',
-    description: 'Clear, useful reporting that helps people see performance, spot risks and make informed decisions.',
-    detail: 'Power BI · SQL · Excel',
-  },
-  {
-    number: '02',
-    title: 'Data automation',
-    description: 'Replace repetitive manual work with reliable workflows and pipelines that give your team time back.',
-    detail: 'Python · Power Automate · Azure Data Factory · Workato',
-  },
-  {
-    number: '03',
-    title: 'Business analysis',
-    description: 'Turn complex problems and fuzzy requirements into a practical, well-scoped path to delivery.',
-    detail: 'Discovery · Requirements · Delivery',
-  },
-  {
-    number: '04',
-    title: 'Data, risk & security',
-    description: 'Understand how data moves through your organisation, and identify the risks and dependencies along the way.',
-    detail: 'Data lineage · IT risk · Architecture',
-  },
-  {
-  number: '05',
-  title: 'SaaS contract due diligence',
-  description: 'Enter new enterprise agreements and renewals knowing exactly what you are buying - with licence lineage traced across your software estate and future requirements forecast with confidence.',
-  detail: 'Licence lineage · Contract review · Licence forecasting',
+{
+number: '01',
+title: 'Reporting & dashboards',
+description: 'Clear, useful reporting that helps people see performance, spot risks and make informed decisions.',
+detail: 'Power BI · SQL · Excel',
+},
+{
+number: '02',
+title: 'Data automation',
+description: 'Replace repetitive manual work with reliable workflows and pipelines that give your team time back.',
+detail: 'Python · Power Automate · Azure Data Factory · Workato',
+},
+{
+number: '03',
+title: 'Business analysis',
+description: 'Turn complex problems and fuzzy requirements into a practical, well-scoped path to delivery.',
+detail: 'Discovery · Requirements · Delivery',
+},
+{
+number: '04',
+title: 'Data, risk & security',
+description: 'Understand how data moves through your organisation, and identify the risks and dependencies along the
+way.',
+detail: 'Data lineage · IT risk · Architecture',
+},
+{
+number: '05',
+title: 'SaaS contract due diligence',
+description: 'Enter new enterprise agreements and renewals knowing exactly what you are buying - with licence lineage
+traced across your software estate and future requirements forecast with confidence.',
+detail: 'Licence lineage · Contract review · Licence forecasting',
 },
 ];
 
 const projects = [
-  {
-    category: 'REPORTING & FORECASTING',
-    title: 'A clearer view of business performance',
-    description: 'Built a leadership reporting suite spanning commercial performance, order book pipeline and operations, including target tracking and forecasting.',
-    tags: 'Power BI / Azure SQL / DAX',
-  },
-  {
-    category: 'DATA INTEGRATION',
-    title: 'Connecting data for subscription reporting',
-    description: 'Created an Azure Data Factory pipeline to bring Stripe data into Azure SQL for downstream subscription reporting.',
-    tags: 'Azure Data Factory / REST API / SQL',
-  },
-  {
-    category: 'PROCESS AUTOMATION',
-    title: 'Making funding return checks easier',
-    description: 'Built a tool for an apprenticeship training provider to compare learner records with the annual R14 funding return, helping teams resolve mismatches faster.',
-    tags: 'Python / marimo / Excel',
-  },
+{
+category: 'REPORTING & FORECASTING',
+title: 'A clearer view of business performance',
+description: 'Built a leadership reporting suite spanning commercial performance, order book pipeline and operations,
+including target tracking and forecasting.',
+tags: 'Power BI / Azure SQL / DAX',
+},
+{
+category: 'DATA INTEGRATION',
+title: 'Connecting data for subscription reporting',
+description: 'Created an Azure Data Factory pipeline to bring Stripe data into Azure SQL for downstream subscription
+reporting.',
+tags: 'Azure Data Factory / REST API / SQL',
+},
+{
+category: 'PROCESS AUTOMATION',
+title: 'Making funding return checks easier',
+description: 'Built a tool for an apprenticeship training provider to compare learner records with the annual R14
+funding return, helping teams resolve mismatches faster.',
+tags: 'Python / marimo / Excel',
+},
 ];
 ---
 
 <!doctype html>
 <html lang="en-GB">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Phil Quinn helps organisations turn data into useful insights, better decisions and practical solutions." />
-    <meta name="theme-color" content="#050419" />
-    <title>Phil Quinn | Data Analytics Consultant</title>
-    <link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}favicon.svg`} />
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="brand" href="#top" aria-label="PQ Data Analytics, back to top">
-          <span class="brand-mark">pq<span>.</span></span>
-          <span class="brand-name">DATA<br />ANALYTICS</span>
-        </a>
-        <nav aria-label="Main navigation">
-          <a href="#services">Services</a>
-          <a href="#work">Selected work</a>
-          <a href="#about">About</a>
-          <a href={`${import.meta.env.BASE_URL}bookmarks/`}>Bookmarks</a>
-        </nav>
-        <a class="header-contact" href={booking} target="_blank" rel="noopener noreferrer">Book a call <span aria-hidden="true">↗</span><span class="sr-only"> (opens Cal.com in a new tab)</span></a>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Phil Quinn helps organisations turn data into useful insights, better decisions and practical solutions." />
+  <meta name="theme-color" content="#050419" />
+  <title>Phil Quinn | Data Analytics Consultant</title>
+  <link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}favicon.svg`} />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="PQ Data Analytics, back to top">
+        <span class="brand-mark">pq<span>.</span></span>
+        <span class="brand-name">DATA<br />ANALYTICS</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#work">Selected work</a>
+        <a href="#about">About</a>
+        <a href={`${import.meta.env.BASE_URL}bookmarks/`}>Bookmarks</a>
+      </nav>
+      <a class="header-contact" href={booking} target="_blank" rel="noopener noreferrer">Book a call <span
+          aria-hidden="true">↗</span><span class="sr-only"> (opens Cal.com in a new tab)</span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> DATA ANALYTICS CONSULTANCY</p>
+          <h1>Better data.<br /><em>Better decisions.</em></h1>
+          <p class="hero-intro">I help organisations turn their data into insights that move the business forward.</p>
+          <div class="hero-actions">
+            <a class="button button-dark" href={booking} target="_blank" rel="noopener noreferrer">Book a call <span
+                aria-hidden="true">↗</span><span class="sr-only"> (opens Cal.com in a new tab)</span></a>
+            <a class="text-link" href="#services">Explore services <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <svg class="network" viewBox="-16 -16 732 592" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+            <defs>
+              <linearGradient id="net-stroke" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="var(--net-a, #67e8f9)" />
+                <stop offset="1" stop-color="var(--net-b, #a78bfa)" />
+              </linearGradient>
+              <radialGradient id="net-fade" cx="50%" cy="50%" r="62%">
+                <stop offset="45%" stop-color="#fff" />
+                <stop offset="100%" stop-color="#000" />
+              </radialGradient>
+              <mask id="net-mask" maskUnits="userSpaceOnUse" x="-16" y="-16" width="732" height="592">
+                <rect x="-16" y="-16" width="732" height="592" fill="url(#net-fade)" />
+              </mask>
+              <circle id="d" r="3" />
+              <circle id="h" r="4" />
+            </defs>
+
+            <g mask="url(#net-mask)">
+              <g fill="none" stroke="url(#net-stroke)" stroke-width="1.4" stroke-opacity=".55" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M25 92 L126 165 L205 72 L291 154 L390 66 L492 144 L630 46
+             M25 92 L87 287 L176 485
+             M205 72 L87 287
+             M205 72 L236 319 L291 154
+             M291 154 L352 401 L390 66 L480 308
+             M480 308 L492 144
+             M480 308 L630 46
+             M236 319 L352 401
+             M236 319 L390 66
+             M126 165 L236 319
+             M176 485 L291 154
+             M176 485 L236 319
+             M352 401 L480 308
+             M352 401 L492 144
+             M480 308 L568 475 L630 46
+             M568 475 L492 144" />
+              </g>
+              <g fill="url(#net-stroke)">
+                <use href="#net-dot" x="25" y="92" />
+                <use href="#net-dot" x="126" y="165" />
+                <use href="#net-hub" x="205" y="72" />
+                <use href="#net-dot" x="291" y="154" />
+                <use href="#net-dot" x="390" y="66" />
+                <use href="#net-hub" x="492" y="144" />
+                <use href="#net-dot" x="630" y="46" />
+                <use href="#net-dot" x="87" y="287" />
+                <use href="#net-hub" x="236" y="319" />
+                <use href="#net-dot" x="352" y="401" />
+                <use href="#net-hub" x="480" y="308" />
+                <use href="#net-dot" x="176" y="485" />
+                <use href="#net-dot" x="568" y="475" />
+              </g>
+            </g>
+          </svg>
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="orbit-core"><span>pq</span><i></i></div>
+          <div class="data-card">
+            <div class="data-card-top"><span>FROM INFORMATION</span><span>TO INSIGHT ↗</span></div>
+            <p>A clearer picture</p>
+            <div class="chart-bars">
+              <span style="--height: 31%"></span><span style="--height: 48%"></span><span
+                style="--height: 41%"></span><span style="--height: 64%"></span><span style="--height: 58%"></span><span
+                style="--height: 80%"></span><span style="--height: 100%"></span>
+            </div>
+            <div class="chart-bottom"><span>DATA</span><span>DECISIONS</span></div>
+          </div>
+          <div class="art-note"><span class="art-asterisk">✳</span><span>Clarity for the<br />decisions that
+              matter.</span></div>
+        </div>
       </div>
-    </header>
+      <div class="container hero-footer"><span>INDEPENDENT CONSULTANT · UK</span><span>TECHNICAL THINKING. BUSINESS
+          FOCUS.</span></div>
+    </section>
 
-    <main id="main">
-      <section class="hero" id="top">
-        <div class="container hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow"><span class="status-dot"></span> DATA ANALYTICS CONSULTANCY</p>
-            <h1>Better data.<br /><em>Better decisions.</em></h1>
-            <p class="hero-intro">I help organisations turn their data into insights that move the business forward.</p>
-            <div class="hero-actions">
-              <a class="button button-dark" href={booking} target="_blank" rel="noopener noreferrer">Book a call <span aria-hidden="true">↗</span><span class="sr-only"> (opens Cal.com in a new tab)</span></a>
-              <a class="text-link" href="#services">Explore services <span aria-hidden="true">↓</span></a>
-            </div>
-          </div>
-          <div class="hero-art" aria-hidden="true">
-            <svg class="network" viewBox="0 0 700 560" preserveAspectRatio="xMidYMid slice">
-              <g class="network-lines">
-                <path d="M25 92 126 165 205 72 291 154 390 66 492 144 630 46M25 92 87 287 205 72 236 319 291 154 352 401 390 66 480 308 492 144 630 46M87 287 176 485 236 319 352 401 480 308 568 475 630 46M126 165 236 319 390 66 480 308 630 46M176 485 291 154 352 401 492 144 568 475" />
-              </g>
-              <g class="network-points">
-                <circle cx="25" cy="92" r="3" /><circle cx="126" cy="165" r="3" /><circle cx="205" cy="72" r="4" />
-                <circle cx="291" cy="154" r="3" /><circle cx="390" cy="66" r="3" /><circle cx="492" cy="144" r="4" />
-                <circle cx="630" cy="46" r="3" /><circle cx="87" cy="287" r="3" /><circle cx="236" cy="319" r="4" />
-                <circle cx="352" cy="401" r="3" /><circle cx="480" cy="308" r="4" /><circle cx="176" cy="485" r="3" />
-                <circle cx="568" cy="475" r="3" />
-              </g>
-            </svg>
-            <div class="orbit orbit-one"></div>
-            <div class="orbit orbit-two"></div>
-            <div class="orbit-core"><span>pq</span><i></i></div>
-            <div class="data-card">
-              <div class="data-card-top"><span>FROM INFORMATION</span><span>TO INSIGHT ↗</span></div>
-              <p>A clearer picture</p>
-              <div class="chart-bars">
-                <span style="--height: 31%"></span><span style="--height: 48%"></span><span style="--height: 41%"></span><span style="--height: 64%"></span><span style="--height: 58%"></span><span style="--height: 80%"></span><span style="--height: 100%"></span>
-              </div>
-              <div class="chart-bottom"><span>DATA</span><span>DECISIONS</span></div>
-            </div>
-            <div class="art-note"><span class="art-asterisk">✳</span><span>Clarity for the<br />decisions that matter.</span></div>
-          </div>
+    <section class="intro section" aria-labelledby="intro-title">
+      <div class="container intro-grid">
+        <p class="eyebrow">INTRO<span class="accent">/</span></p>
+        <div>
+          <h2 id="intro-title">Data is valuable.<br /><span>Understanding it is everything.</span></h2>
+          <p>Good data work is about more than the numbers. It’s about asking the right questions, finding the signal in
+            the noise, and making the answer useful to the people making decisions.</p>
         </div>
-        <div class="container hero-footer"><span>INDEPENDENT CONSULTANT · UK</span><span>TECHNICAL THINKING. BUSINESS FOCUS.</span></div>
-      </section>
+      </div>
+    </section>
 
-      <section class="intro section" aria-labelledby="intro-title">
-        <div class="container intro-grid">
-          <p class="eyebrow">INTRO<span class="accent">/</span></p>
+    <section class="services section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-heading">
           <div>
-            <h2 id="intro-title">Data is valuable.<br /><span>Understanding it is everything.</span></h2>
-            <p>Good data work is about more than the numbers. It’s about asking the right questions, finding the signal in the noise, and making the answer useful to the people making decisions.</p>
+            <p class="eyebrow">Services<span class="accent">/</span></p>
+            <h2 id="services-title">From questions<br />to clarity.</h2>
           </div>
+          <p>Practical support where business needs and technical challenges meet.</p>
         </div>
-      </section>
+        <div class="service-grid">
+          {services.map((service) => (
+          <article class="service-card">
+            <div class="card-top"><span>{service.number}</span><span aria-hidden="true">↗</span></div>
+            <h3>{service.title}</h3>
+            <p>{service.description}</p>
+            <div class="card-detail">{service.detail}</div>
+          </article>
+          ))}
+        </div>
+      </div>
+    </section>
 
-      <section class="services section" id="services" aria-labelledby="services-title">
-        <div class="container">
-          <div class="section-heading">
-            <div><p class="eyebrow">Services<span class="accent">/</span></p><h2 id="services-title">From questions<br />to clarity.</h2></div>
-            <p>Practical support where business needs and technical challenges meet.</p>
+    <section class="work section" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">PROJECTS <span class="accent">/</span></p>
+            <h2 id="work-title">Selected projects.<br />Real-world impact.</h2>
           </div>
-          <div class="service-grid">
-            {services.map((service) => (
-              <article class="service-card">
-                <div class="card-top"><span>{service.number}</span><span aria-hidden="true">↗</span></div>
-                <h3>{service.title}</h3>
-                <p>{service.description}</p>
-                <div class="card-detail">{service.detail}</div>
-              </article>
-            ))}
-          </div>
+          <p>A few examples of turning data challenges into practical solutions.</p>
         </div>
-      </section>
+        <div class="project-list">
+          {projects.map((project, index) => (
+          <article class="project">
+            <span class="project-number">0{index + 1}</span>
+            <div class="project-body">
+              <p class="eyebrow">{project.category}</p>
+              <h3>{project.title}</h3>
+            </div>
+            <div class="project-description">
+              <p>{project.description}</p><span>{project.tags}</span>
+            </div>
+          </article>
+          ))}
+        </div>
+      </div>
+    </section>
 
-      <section class="work section" id="work" aria-labelledby="work-title">
-        <div class="container">
-          <div class="section-heading">
-            <div><p class="eyebrow">PROJECTS <span class="accent">/</span></p><h2 id="work-title">Selected projects.<br />Real-world impact.</h2></div>
-            <p>A few examples of turning data challenges into practical solutions.</p>
-          </div>
-          <div class="project-list">
-            {projects.map((project, index) => (
-              <article class="project">
-                <span class="project-number">0{index + 1}</span>
-                <div class="project-body"><p class="eyebrow">{project.category}</p><h3>{project.title}</h3></div>
-                <div class="project-description"><p>{project.description}</p><span>{project.tags}</span></div>
-              </article>
-            ))}
-          </div>
+    <section class="about section" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">ABOUT<span class="accent">/</span></p>
+          <h2 id="about-title">A bridge between<br /><em>data and decisions.</em></h2>
         </div>
-      </section>
+        <div class="about-copy">
+          <p class="about-lead">I’m an independent data analytics consultant based in the UK.</p>
+          <p>My background spans business analysis, product ownership and technical consultancy. I can dig into the
+            detail with technical teams, then sit down with leadership and explain what it means for the business.</p>
+          <p>Whether you need a better dashboard, a less manual process or a clearer understanding of your data, I bring
+            a practical, collaborative approach to the problem.</p>
+          <a class="text-link" href={linkedIn} target="_blank" rel="noopener noreferrer">More about me on LinkedIn <span
+              aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+        </div>
+      </div>
+    </section>
 
-      <section class="about section" id="about" aria-labelledby="about-title">
-        <div class="container about-grid">
-          <div><p class="eyebrow">ABOUT<span class="accent">/</span></p><h2 id="about-title">A bridge between<br /><em>data and decisions.</em></h2></div>
-          <div class="about-copy">
-            <p class="about-lead">I’m an independent data analytics consultant based in the UK.</p>
-            <p>My background spans business analysis, product ownership and technical consultancy. I can dig into the detail with technical teams, then sit down with leadership and explain what it means for the business.</p>
-            <p>Whether you need a better dashboard, a less manual process or a clearer understanding of your data, I bring a practical, collaborative approach to the problem.</p>
-            <a class="text-link" href={linkedIn} target="_blank" rel="noopener noreferrer">More about me on LinkedIn <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
-          </div>
+    <section class="contact section" aria-labelledby="contact-title">
+      <div class="container contact-inner">
+        <div>
+          <p class="eyebrow">CONTACT<span class="accent">/</span></p>
+          <h2 id="contact-title">Have a data challenge<br /><em>in mind?</em></h2>
         </div>
-      </section>
+        <div class="contact-copy">
+          <p>Looking for freelance support or hiring for a data analytics or BI role? I’d be happy to talk.</p><a
+            class="button button-light" href={linkedIn} target="_blank" rel="noopener noreferrer">Connect on LinkedIn
+            <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner"><a class="brand footer-brand" href="#top"><span
+          class="brand-mark">pq<span>.</span></span><span class="brand-name">DATA<br />ANALYTICS</span></a>
+      <p>© {new Date().getFullYear()} Phil Quinn. All rights reserved.</p><a href={linkedIn} target="_blank"
+        rel="noopener noreferrer">LinkedIn ↗<span class="sr-only"> (opens in a new tab)</span></a><a href={github}
+        target="_blank" rel="noopener noreferrer">GitHub ↗<span class="sr-only"> (opens in a new tab)</span></a>
+    </div>
+  </footer>
+</body>
 
-      <section class="contact section" aria-labelledby="contact-title">
-        <div class="container contact-inner">
-          <div><p class="eyebrow">CONTACT<span class="accent">/</span></p><h2 id="contact-title">Have a data challenge<br /><em>in mind?</em></h2></div>
-          <div class="contact-copy"><p>Looking for freelance support or hiring for a data analytics or BI role? I’d be happy to talk.</p><a class="button button-light" href={linkedIn} target="_blank" rel="noopener noreferrer">Connect on LinkedIn <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a></div>
-        </div>
-      </section>
-    </main>
-    <footer class="site-footer">
-      <div class="container footer-inner"><a class="brand footer-brand" href="#top"><span class="brand-mark">pq<span>.</span></span><span class="brand-name">DATA<br />ANALYTICS</span></a><p>© {new Date().getFullYear()} Phil Quinn. All rights reserved.</p><a href={linkedIn} target="_blank" rel="noopener noreferrer">LinkedIn ↗<span class="sr-only"> (opens in a new tab)</span></a><a href={github} target="_blank" rel="noopener noreferrer">GitHub ↗<span class="sr-only"> (opens in a new tab)</span></a></div>
-    </footer>
-  </body>
 </html>
 
 <style is:global>
@@ -216,178 +303,988 @@ const projects = [
     --muted: #aaa9bb;
     --line: rgb(255 255 255 / 18%);
   }
-  * { box-sizing: border-box; }
-  body { margin: 0; background: var(--bg); }
-  a { color: inherit; }
-  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
-  ::selection { color: var(--bg); background: var(--accent); }
-  .skip-link { position: absolute; z-index: 20; left: 1rem; top: -5rem; padding: .8rem 1rem; color: var(--bg); background: var(--accent); }
-  .skip-link:focus { top: 1rem; }
-  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
-  .container { width: min(1200px, 90%); margin-inline: auto; }
-  .site-header { position: sticky; z-index: 10; top: 0; background: rgb(5 4 25 / 88%); border-bottom: 1px solid var(--line); backdrop-filter: blur(16px); }
-  .header-inner { min-height: 88px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
-  .brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; flex: none; }
-  .brand-mark { font-size: 35px; font-weight: 800; letter-spacing: -3px; line-height: 1; }
-  .brand-mark span { color: var(--accent); }
-  .brand-name { font-size: 9px; line-height: 1.2; font-weight: 700; letter-spacing: 1.5px; color: var(--muted); }
-  nav { display: flex; gap: 34px; margin-left: auto; margin-right: 28px; }
-  nav a, .header-contact { font-size: 13px; font-weight: 600; text-decoration: none; }
-  nav a { color: #d3d2de; transition: color .2s; }
-  nav a:hover, .text-link:hover, .site-footer a:hover { color: var(--accent); }
-  .header-contact { display: inline-flex; align-items: center; gap: 20px; padding: 13px 17px; border-radius: 8px; color: var(--bg); background: var(--accent); transition: transform .2s, background-color .2s; }
-  .header-contact:hover, .button-light:hover { background: #e8ff72; transform: translateY(-2px); }
-  .hero { overflow: clip; background: radial-gradient(ellipse at 76% 45%, #171333 0, var(--bg) 48%); }
-  .hero-grid { min-height: 620px; display: grid; grid-template-columns: 1.08fr .92fr; gap: 55px; align-items: center; padding-top: 65px; padding-bottom: 55px; }
-  .eyebrow { font-size: 10px; letter-spacing: 1.8px; font-weight: 700; line-height: 1.5; margin: 0 0 25px; color: var(--muted); }
-  .status-dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); margin-right: 8px; vertical-align: 1px; box-shadow: 0 0 12px rgb(220 253 53 / 65%); }
-  .accent { color: var(--accent); }
-  h1, h2, h3, p { margin-top: 0; }
-  h1, h2 { font-weight: 400; letter-spacing: -.055em; }
-  h1 { max-width: 720px; margin-bottom: 26px; font-size: clamp(58px, 7.1vw, 96px); line-height: .99; }
-  h1 em, h2 em { color: var(--accent); font-style: normal; font-weight: 400; }
-  .hero-intro { max-width: 460px; margin-bottom: 32px; color: #c4c3d0; font-size: 18px; line-height: 1.65; }
-  .hero-actions { display: flex; align-items: center; gap: 28px; flex-wrap: wrap; }
-  .button { display: inline-flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 54px; padding: 15px 19px; border-radius: 8px; font-size: 13px; font-weight: 700; text-decoration: none; transition: transform .2s, background-color .2s; }
-  .button:hover { transform: translateY(-2px); }
-  .button-dark { color: var(--bg); background: var(--accent); }
-  .button-dark:hover { background: #e8ff72; }
-  .text-link { font-size: 13px; font-weight: 600; text-decoration: none; transition: color .2s; }
-  .text-link span[aria-hidden] { margin-left: 10px; color: var(--accent); }
-  .hero-art { min-height: 450px; position: relative; display: grid; place-items: center; isolation: isolate; }
-  .hero-art::before { position: absolute; z-index: -1; width: 82%; aspect-ratio: 1; content: ""; border-radius: 50%; background: radial-gradient(circle, rgb(84 78 145 / 16%), transparent 68%); }
-  .network { position: absolute; inset: -6% -16%; width: 132%; height: 112%; opacity: .57; }
-  .network-lines { fill: none; stroke: #8c89b2; stroke-width: .8; opacity: .48; }
-  .network-points { fill: #f0efff; }
-  .network-points circle:nth-child(3n) { fill: var(--accent); filter: drop-shadow(0 0 5px var(--accent)); }
-  .orbit { position: absolute; width: 67%; aspect-ratio: 1; border: 1px solid rgb(170 168 209 / 24%); border-radius: 50%; }
-  .orbit-one { transform: rotateX(66deg) rotate(-23deg); }
-  .orbit-two { width: 80%; transform: rotateX(66deg) rotate(45deg); border-color: rgb(170 168 209 / 16%); }
-  .orbit::after { position: absolute; top: 17%; right: 12%; width: 9px; height: 9px; content: ""; border-radius: 50%; background: var(--accent); box-shadow: 0 0 18px var(--accent); }
-  .orbit-two::after { top: auto; right: auto; bottom: 11%; left: 18%; width: 6px; height: 6px; background: #fff; box-shadow: 0 0 12px #fff; }
-  .orbit-core { position: absolute; width: 100px; aspect-ratio: 1; display: grid; place-items: center; border: 1px solid rgb(220 253 53 / 40%); border-radius: 50%; background: radial-gradient(circle, #262548, #0b0a22 72%); box-shadow: 0 0 55px rgb(220 253 53 / 10%); color: var(--accent); font-size: 28px; font-weight: 800; letter-spacing: -3px; }
-  .orbit-core i { position: absolute; width: 9px; height: 9px; top: 14px; right: 15px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 15px var(--accent); }
-  .data-card { position: relative; z-index: 1; width: min(310px, 76%); padding: 18px 20px 15px; border: 1px solid rgb(255 255 255 / 19%); border-radius: 10px; background: rgb(12 11 34 / 88%); box-shadow: 0 24px 70px rgb(0 0 0 / 35%); backdrop-filter: blur(10px); transform: translate(17%, 34%); }
-  .data-card-top, .chart-bottom { display: flex; justify-content: space-between; color: #b6b4cc; font-size: 8px; font-weight: 700; letter-spacing: 1px; }
-  .data-card p { margin: 13px 0 0; font-size: 14px; }
-  .chart-bars { height: 88px; display: flex; align-items: end; gap: 8px; margin: 8px 0 11px; border-bottom: 1px solid rgb(255 255 255 / 20%); }
-  .chart-bars span { height: var(--height); flex: 1; background: #77749d; }
-  .chart-bars span:nth-last-child(-n+2) { background: var(--accent); }
-  .chart-bottom { font-size: 7px; }
-  .art-note { position: absolute; left: 0; bottom: 2%; display: flex; align-items: center; gap: 9px; color: #d2d0df; font-size: 10px; font-weight: 600; line-height: 1.4; }
-  .art-asterisk { color: var(--accent); font-size: 26px; }
-  .hero-footer { display: flex; justify-content: space-between; gap: 20px; padding: 18px 0 20px; border-top: 1px solid var(--line); color: #aaa9bb; font-size: 9px; font-weight: 600; letter-spacing: 1.2px; }
-  .section { padding: 112px 0; }
-  .intro { background: #0a0922; }
-  .intro-grid, .about-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 40px; }
-  .intro h2, .section-heading h2, .about h2, .contact h2 { margin-bottom: 24px; font-size: clamp(38px, 4.5vw, 62px); line-height: 1.1; }
-  .intro h2 span { color: #a4a2b7; }
-  .intro p:not(.eyebrow) { max-width: 650px; margin-bottom: 0; color: #b9b8c8; font-size: 16px; line-height: 1.8; }
-  .services { background: var(--bg); }
-  .section-heading { display: flex; justify-content: space-between; align-items: end; gap: 40px; margin-bottom: 47px; }
-  .section-heading h2 { margin-bottom: 0; }
-  .section-heading > p { max-width: 270px; margin-bottom: 4px; color: var(--muted); font-size: 14px; line-height: 1.7; }
-  .service-grid { display: grid; grid-template-columns: repeat(4, 1fr); }
-  .service-card { min-height: 310px; display: flex; flex-direction: column; padding: 25px 22px 22px; border: 1px solid var(--line); border-right: 0; background: var(--surface); transition: background .25s, transform .25s, border-color .25s; }
-  .service-card:last-child { border-right: 1px solid var(--line); }
-  .service-card:hover { z-index: 1; transform: translateY(-5px); border-color: rgb(220 253 53 / 55%); background: #14132f; }
-  .card-top { display: flex; justify-content: space-between; margin-bottom: 45px; color: #aaa9bb; font-size: 11px; }
-  .card-top span:last-child { color: var(--accent); font-size: 17px; }
-  .service-card h3 { margin-bottom: 15px; font-size: 21px; font-weight: 400; letter-spacing: -.03em; }
-  .service-card p { margin-bottom: 25px; color: #b1b0c1; font-size: 13px; line-height: 1.7; }
-  .card-detail { margin-top: auto; padding-top: 16px; border-top: 1px solid var(--line); color: #c1c0cf; font-size: 10px; font-weight: 600; line-height: 1.5; }
-  .work { background: #0a0922; }
-  .project { display: grid; grid-template-columns: 55px 1fr 1fr; gap: 30px; padding: 30px 0; border-top: 1px solid var(--line); }
-  .project:last-child { border-bottom: 1px solid var(--line); }
-  .project-number { color: var(--accent); font-size: 11px; }
-  .project .eyebrow { margin-bottom: 14px; font-size: 9px; }
-  .project h3 { margin: 0; font-size: 25px; font-weight: 400; letter-spacing: -.035em; }
-  .project-description p { margin-bottom: 14px; color: #c1c0ce; font-size: 14px; line-height: 1.7; }
-  .project-description span { color: #d2e98a; font-size: 10px; font-weight: 600; }
-  .about { background: var(--bg); }
-  .about-grid { grid-template-columns: 1fr 1fr; gap: 70px; }
-  .about-copy { max-width: 540px; }
-  .about-copy p { color: #b9b8c8; font-size: 15px; line-height: 1.8; }
-  .about-copy .about-lead { color: var(--ink); font-size: 23px; line-height: 1.4; }
-  .about-copy .text-link { display: inline-block; margin-top: 12px; }
-  .contact { padding: 76px 0; background: var(--bg); }
-  .contact-inner { display: flex; justify-content: space-between; align-items: end; gap: 50px; padding: 58px 62px; border-radius: 14px; color: var(--bg); background: var(--accent); }
-  .contact .eyebrow { color: #323719; }
-  .contact h2 { margin-bottom: 0; }
-  .contact h2 em { color: #454d20; }
-  .contact-copy { max-width: 330px; }
-  .contact-copy p { color: #30351d; font-size: 14px; line-height: 1.7; }
-  .button-light { color: var(--bg); background: #fff; }
-  .site-footer { color: #e3e2ec; background: #030313; }
-  .footer-inner { min-height: 96px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
-  .footer-inner p, .footer-inner > a:not(.footer-brand) { margin: 0; color: #aaa9bb; font-size: 11px; text-decoration: none; }
-  .footer-brand .brand-mark { font-size: 30px; }
-  @media (prefers-reduced-motion: no-preference) {
-    .hero-copy > * { animation: rise-in .8s both; }
-    .hero-copy > :nth-child(2) { animation-delay: .08s; }
-    .hero-copy > :nth-child(3) { animation-delay: .17s; }
-    .hero-copy > :nth-child(4) { animation-delay: .26s; }
-    .orbit-one { animation: orbit-turn 70s linear infinite; }
-    .orbit-two { animation: orbit-turn 95s linear infinite reverse; }
+
+  * {
+    box-sizing: border-box;
   }
-  @keyframes rise-in { from { opacity: .01; transform: translateY(20px); } }
-  @keyframes orbit-turn { to { rotate: 360deg; } }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+  }
+
+  a {
+    color: inherit;
+  }
+
+  a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+  }
+
+  ::selection {
+    color: var(--bg);
+    background: var(--accent);
+  }
+
+  .skip-link {
+    position: absolute;
+    z-index: 20;
+    left: 1rem;
+    top: -5rem;
+    padding: .8rem 1rem;
+    color: var(--bg);
+    background: var(--accent);
+  }
+
+  .skip-link:focus {
+    top: 1rem;
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .container {
+    width: min(1200px, 90%);
+    margin-inline: auto;
+  }
+
+  .site-header {
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    background: rgb(5 4 25 / 88%);
+    border-bottom: 1px solid var(--line);
+    backdrop-filter: blur(16px);
+  }
+
+  .header-inner {
+    min-height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    flex: none;
+  }
+
+  .brand-mark {
+    font-size: 35px;
+    font-weight: 800;
+    letter-spacing: -3px;
+    line-height: 1;
+  }
+
+  .brand-mark span {
+    color: var(--accent);
+  }
+
+  .brand-name {
+    font-size: 9px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: var(--muted);
+  }
+
+  nav {
+    display: flex;
+    gap: 34px;
+    margin-left: auto;
+    margin-right: 28px;
+  }
+
+  nav a,
+  .header-contact {
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  nav a {
+    color: #d3d2de;
+    transition: color .2s;
+  }
+
+  nav a:hover,
+  .text-link:hover,
+  .site-footer a:hover {
+    color: var(--accent);
+  }
+
+  .header-contact {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    padding: 13px 17px;
+    border-radius: 8px;
+    color: var(--bg);
+    background: var(--accent);
+    transition: transform .2s, background-color .2s;
+  }
+
+  .header-contact:hover,
+  .button-light:hover {
+    background: #e8ff72;
+    transform: translateY(-2px);
+  }
+
+  .hero {
+    overflow: clip;
+    background: radial-gradient(ellipse at 76% 45%, #171333 0, var(--bg) 48%);
+  }
+
+  .hero-grid {
+    min-height: 620px;
+    display: grid;
+    grid-template-columns: 1.08fr .92fr;
+    gap: 55px;
+    align-items: center;
+    padding-top: 65px;
+    padding-bottom: 55px;
+  }
+
+  .eyebrow {
+    font-size: 10px;
+    letter-spacing: 1.8px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 0 0 25px;
+    color: var(--muted);
+  }
+
+  .status-dot {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--accent);
+    margin-right: 8px;
+    vertical-align: 1px;
+    box-shadow: 0 0 12px rgb(220 253 53 / 65%);
+  }
+
+  .accent {
+    color: var(--accent);
+  }
+
+  h1,
+  h2,
+  h3,
+  p {
+    margin-top: 0;
+  }
+
+  h1,
+  h2 {
+    font-weight: 400;
+    letter-spacing: -.055em;
+  }
+
+  h1 {
+    max-width: 720px;
+    margin-bottom: 26px;
+    font-size: clamp(58px, 7.1vw, 96px);
+    line-height: .99;
+  }
+
+  h1 em,
+  h2 em {
+    color: var(--accent);
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .hero-intro {
+    max-width: 460px;
+    margin-bottom: 32px;
+    color: #c4c3d0;
+    font-size: 18px;
+    line-height: 1.65;
+  }
+
+  .hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    flex-wrap: wrap;
+  }
+
+  .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    min-height: 54px;
+    padding: 15px 19px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform .2s, background-color .2s;
+  }
+
+  .button:hover {
+    transform: translateY(-2px);
+  }
+
+  .button-dark {
+    color: var(--bg);
+    background: var(--accent);
+  }
+
+  .button-dark:hover {
+    background: #e8ff72;
+  }
+
+  .text-link {
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color .2s;
+  }
+
+  .text-link span[aria-hidden] {
+    margin-left: 10px;
+    color: var(--accent);
+  }
+
+  .hero-art {
+    min-height: 450px;
+    position: relative;
+    display: grid;
+    place-items: center;
+    isolation: isolate;
+  }
+
+  .hero-art::before {
+    position: absolute;
+    z-index: -1;
+    width: 82%;
+    aspect-ratio: 1;
+    content: "";
+    border-radius: 50%;
+    background: radial-gradient(circle, rgb(84 78 145 / 16%), transparent 68%);
+  }
+
+  .network {
+    position: absolute;
+    inset: -6% -16%;
+    width: 132%;
+    height: 112%;
+    opacity: .57;
+  }
+
+  .network-lines {
+    fill: none;
+    stroke: #8c89b2;
+    stroke-width: .8;
+    opacity: .48;
+  }
+
+  .network-points {
+    fill: #f0efff;
+  }
+
+  .network-points circle:nth-child(3n) {
+    fill: var(--accent);
+    filter: drop-shadow(0 0 5px var(--accent));
+  }
+
+  .orbit {
+    position: absolute;
+    width: 67%;
+    aspect-ratio: 1;
+    border: 1px solid rgb(170 168 209 / 24%);
+    border-radius: 50%;
+  }
+
+  .orbit-one {
+    transform: rotateX(66deg) rotate(-23deg);
+  }
+
+  .orbit-two {
+    width: 80%;
+    transform: rotateX(66deg) rotate(45deg);
+    border-color: rgb(170 168 209 / 16%);
+  }
+
+  .orbit::after {
+    position: absolute;
+    top: 17%;
+    right: 12%;
+    width: 9px;
+    height: 9px;
+    content: "";
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 18px var(--accent);
+  }
+
+  .orbit-two::after {
+    top: auto;
+    right: auto;
+    bottom: 11%;
+    left: 18%;
+    width: 6px;
+    height: 6px;
+    background: #fff;
+    box-shadow: 0 0 12px #fff;
+  }
+
+  .orbit-core {
+    position: absolute;
+    width: 100px;
+    aspect-ratio: 1;
+    display: grid;
+    place-items: center;
+    border: 1px solid rgb(220 253 53 / 40%);
+    border-radius: 50%;
+    background: radial-gradient(circle, #262548, #0b0a22 72%);
+    box-shadow: 0 0 55px rgb(220 253 53 / 10%);
+    color: var(--accent);
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -3px;
+  }
+
+  .orbit-core i {
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    top: 14px;
+    right: 15px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 15px var(--accent);
+  }
+
+  .data-card {
+    position: relative;
+    z-index: 1;
+    width: min(310px, 76%);
+    padding: 18px 20px 15px;
+    border: 1px solid rgb(255 255 255 / 19%);
+    border-radius: 10px;
+    background: rgb(12 11 34 / 88%);
+    box-shadow: 0 24px 70px rgb(0 0 0 / 35%);
+    backdrop-filter: blur(10px);
+    transform: translate(17%, 34%);
+  }
+
+  .data-card-top,
+  .chart-bottom {
+    display: flex;
+    justify-content: space-between;
+    color: #b6b4cc;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  .data-card p {
+    margin: 13px 0 0;
+    font-size: 14px;
+  }
+
+  .chart-bars {
+    height: 88px;
+    display: flex;
+    align-items: end;
+    gap: 8px;
+    margin: 8px 0 11px;
+    border-bottom: 1px solid rgb(255 255 255 / 20%);
+  }
+
+  .chart-bars span {
+    height: var(--height);
+    flex: 1;
+    background: #77749d;
+  }
+
+  .chart-bars span:nth-last-child(-n+2) {
+    background: var(--accent);
+  }
+
+  .chart-bottom {
+    font-size: 7px;
+  }
+
+  .art-note {
+    position: absolute;
+    left: 0;
+    bottom: 2%;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #d2d0df;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  .art-asterisk {
+    color: var(--accent);
+    font-size: 26px;
+  }
+
+  .hero-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 18px 0 20px;
+    border-top: 1px solid var(--line);
+    color: #aaa9bb;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+  }
+
+  .section {
+    padding: 112px 0;
+  }
+
+  .intro {
+    background: #0a0922;
+  }
+
+  .intro-grid,
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+  }
+
+  .intro h2,
+  .section-heading h2,
+  .about h2,
+  .contact h2 {
+    margin-bottom: 24px;
+    font-size: clamp(38px, 4.5vw, 62px);
+    line-height: 1.1;
+  }
+
+  .intro h2 span {
+    color: #a4a2b7;
+  }
+
+  .intro p:not(.eyebrow) {
+    max-width: 650px;
+    margin-bottom: 0;
+    color: #b9b8c8;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .services {
+    background: var(--bg);
+  }
+
+  .section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 40px;
+    margin-bottom: 47px;
+  }
+
+  .section-heading h2 {
+    margin-bottom: 0;
+  }
+
+  .section-heading>p {
+    max-width: 270px;
+    margin-bottom: 4px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .service-card {
+    min-height: 310px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 22px 22px;
+    border: 1px solid var(--line);
+    border-right: 0;
+    background: var(--surface);
+    transition: background .25s, transform .25s, border-color .25s;
+  }
+
+  .service-card:last-child {
+    border-right: 1px solid var(--line);
+  }
+
+  .service-card:hover {
+    z-index: 1;
+    transform: translateY(-5px);
+    border-color: rgb(220 253 53 / 55%);
+    background: #14132f;
+  }
+
+  .card-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
+    color: #aaa9bb;
+    font-size: 11px;
+  }
+
+  .card-top span:last-child {
+    color: var(--accent);
+    font-size: 17px;
+  }
+
+  .service-card h3 {
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 400;
+    letter-spacing: -.03em;
+  }
+
+  .service-card p {
+    margin-bottom: 25px;
+    color: #b1b0c1;
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .card-detail {
+    margin-top: auto;
+    padding-top: 16px;
+    border-top: 1px solid var(--line);
+    color: #c1c0cf;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  .work {
+    background: #0a0922;
+  }
+
+  .project {
+    display: grid;
+    grid-template-columns: 55px 1fr 1fr;
+    gap: 30px;
+    padding: 30px 0;
+    border-top: 1px solid var(--line);
+  }
+
+  .project:last-child {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .project-number {
+    color: var(--accent);
+    font-size: 11px;
+  }
+
+  .project .eyebrow {
+    margin-bottom: 14px;
+    font-size: 9px;
+  }
+
+  .project h3 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: -.035em;
+  }
+
+  .project-description p {
+    margin-bottom: 14px;
+    color: #c1c0ce;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .project-description span {
+    color: #d2e98a;
+    font-size: 10px;
+    font-weight: 600;
+  }
+
+  .about {
+    background: var(--bg);
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+  }
+
+  .about-copy {
+    max-width: 540px;
+  }
+
+  .about-copy p {
+    color: #b9b8c8;
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .about-copy .about-lead {
+    color: var(--ink);
+    font-size: 23px;
+    line-height: 1.4;
+  }
+
+  .about-copy .text-link {
+    display: inline-block;
+    margin-top: 12px;
+  }
+
+  .contact {
+    padding: 76px 0;
+    background: var(--bg);
+  }
+
+  .contact-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 50px;
+    padding: 58px 62px;
+    border-radius: 14px;
+    color: var(--bg);
+    background: var(--accent);
+  }
+
+  .contact .eyebrow {
+    color: #323719;
+  }
+
+  .contact h2 {
+    margin-bottom: 0;
+  }
+
+  .contact h2 em {
+    color: #454d20;
+  }
+
+  .contact-copy {
+    max-width: 330px;
+  }
+
+  .contact-copy p {
+    color: #30351d;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .button-light {
+    color: var(--bg);
+    background: #fff;
+  }
+
+  .site-footer {
+    color: #e3e2ec;
+    background: #030313;
+  }
+
+  .footer-inner {
+    min-height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .footer-inner p,
+  .footer-inner>a:not(.footer-brand) {
+    margin: 0;
+    color: #aaa9bb;
+    font-size: 11px;
+    text-decoration: none;
+  }
+
+  .footer-brand .brand-mark {
+    font-size: 30px;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .hero-copy>* {
+      animation: rise-in .8s both;
+    }
+
+    .hero-copy> :nth-child(2) {
+      animation-delay: .08s;
+    }
+
+    .hero-copy> :nth-child(3) {
+      animation-delay: .17s;
+    }
+
+    .hero-copy> :nth-child(4) {
+      animation-delay: .26s;
+    }
+
+    .orbit-one {
+      animation: orbit-turn 70s linear infinite;
+    }
+
+    .orbit-two {
+      animation: orbit-turn 95s linear infinite reverse;
+    }
+  }
+
+  @keyframes rise-in {
+    from {
+      opacity: .01;
+      transform: translateY(20px);
+    }
+  }
+
+  @keyframes orbit-turn {
+    to {
+      rotate: 360deg;
+    }
+  }
+
   @supports (animation-timeline: view()) {
     @media (prefers-reduced-motion: no-preference) {
-      .service-card, .project {
+
+      .service-card,
+      .project {
         animation: section-rise linear both;
         animation-timeline: view();
         animation-range: entry 0% entry 28%;
       }
     }
   }
-  @keyframes section-rise { from { opacity: .35; translate: 0 18px; } to { opacity: 1; translate: 0 0; } }
+
+  @keyframes section-rise {
+    from {
+      opacity: .35;
+      translate: 0 18px;
+    }
+
+    to {
+      opacity: 1;
+      translate: 0 0;
+    }
+  }
+
   @media (max-width: 850px) {
-    .header-inner { gap: 12px; }
-    .header-inner nav { gap: 16px; margin-right: 12px; }
-    .hero-grid { grid-template-columns: 1fr 1fr; gap: 30px; }
-    h1 { font-size: clamp(55px, 7vw, 76px); }
-    .service-grid { grid-template-columns: repeat(2, 1fr); }
-    .service-card { min-height: 270px; border-right: 1px solid var(--line); }
-    .service-card:nth-child(2n) { border-left: 0; }
-    .service-card:nth-child(n+3) { border-top: 0; }
+    .header-inner {
+      gap: 12px;
+    }
+
+    .header-inner nav {
+      gap: 16px;
+      margin-right: 12px;
+    }
+
+    .hero-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    h1 {
+      font-size: clamp(55px, 7vw, 76px);
+    }
+
+    .service-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .service-card {
+      min-height: 270px;
+      border-right: 1px solid var(--line);
+    }
+
+    .service-card:nth-child(2n) {
+      border-left: 0;
+    }
+
+    .service-card:nth-child(n+3) {
+      border-top: 0;
+    }
   }
+
   @media (max-width: 600px) {
-    .header-inner { min-height: 76px; padding: 13px 0; gap: 14px; }
-    .header-inner nav { justify-content: flex-end; flex-wrap: wrap; gap: 9px 14px; margin: 0; }
-    .header-inner nav a { font-size: 11px; }
-    .header-contact { display: none; }
-    .brand-name { font-size: 8px; }
-    .brand-mark { font-size: 29px; }
-    .hero-grid { min-height: 0; grid-template-columns: 1fr; gap: 28px; padding-top: 64px; padding-bottom: 35px; }
-    h1 { font-size: clamp(54px, 12vw, 74px); }
-    .hero-intro { font-size: 16px; }
-    .hero-art { min-height: 330px; }
-    .network { inset: -5% -10%; width: 120%; height: 110%; }
-    .data-card { width: min(290px, 78%); transform: translate(14%, 28%); }
-    .art-note { bottom: 0; }
-    .hero-footer { gap: 15px; font-size: 8px; }
-    .hero-footer span:last-child { text-align: right; }
-    .section { padding: 76px 0; }
-    .intro-grid, .about-grid { grid-template-columns: 1fr; gap: 15px; }
-    .section-heading { display: block; }
-    .section-heading > p { margin-top: 20px; }
-    .service-grid { grid-template-columns: 1fr; }
-    .service-card { min-height: 0; border-bottom: 0; border-left: 1px solid var(--line); }
-    .service-card:nth-child(2n) { border-left: 1px solid var(--line); }
-    .service-card:last-child { border-bottom: 1px solid var(--line); }
-    .service-card:nth-child(n+2) { border-top: 0; }
-    .card-top { margin-bottom: 30px; }
-    .project { grid-template-columns: 25px 1fr; gap: 15px; }
-    .project-description { grid-column: 2; }
-    .contact { padding: 42px 0; }
-    .contact-inner { display: block; padding: 38px 28px; }
-    .contact-copy { margin-top: 28px; }
-    .footer-inner { padding: 25px 0; flex-wrap: wrap; }
-    .footer-inner p { order: 3; flex-basis: 100%; }
+    .header-inner {
+      min-height: 76px;
+      padding: 13px 0;
+      gap: 14px;
+    }
+
+    .header-inner nav {
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      gap: 9px 14px;
+      margin: 0;
+    }
+
+    .header-inner nav a {
+      font-size: 11px;
+    }
+
+    .header-contact {
+      display: none;
+    }
+
+    .brand-name {
+      font-size: 8px;
+    }
+
+    .brand-mark {
+      font-size: 29px;
+    }
+
+    .hero-grid {
+      min-height: 0;
+      grid-template-columns: 1fr;
+      gap: 28px;
+      padding-top: 64px;
+      padding-bottom: 35px;
+    }
+
+    h1 {
+      font-size: clamp(54px, 12vw, 74px);
+    }
+
+    .hero-intro {
+      font-size: 16px;
+    }
+
+    .hero-art {
+      min-height: 330px;
+    }
+
+    .network {
+      inset: -5% -10%;
+      width: 120%;
+      height: 110%;
+    }
+
+    .data-card {
+      width: min(290px, 78%);
+      transform: translate(14%, 28%);
+    }
+
+    .art-note {
+      bottom: 0;
+    }
+
+    .hero-footer {
+      gap: 15px;
+      font-size: 8px;
+    }
+
+    .hero-footer span:last-child {
+      text-align: right;
+    }
+
+    .section {
+      padding: 76px 0;
+    }
+
+    .intro-grid,
+    .about-grid {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+
+    .section-heading {
+      display: block;
+    }
+
+    .section-heading>p {
+      margin-top: 20px;
+    }
+
+    .service-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .service-card {
+      min-height: 0;
+      border-bottom: 0;
+      border-left: 1px solid var(--line);
+    }
+
+    .service-card:nth-child(2n) {
+      border-left: 1px solid var(--line);
+    }
+
+    .service-card:last-child {
+      border-bottom: 1px solid var(--line);
+    }
+
+    .service-card:nth-child(n+2) {
+      border-top: 0;
+    }
+
+    .card-top {
+      margin-bottom: 30px;
+    }
+
+    .project {
+      grid-template-columns: 25px 1fr;
+      gap: 15px;
+    }
+
+    .project-description {
+      grid-column: 2;
+    }
+
+    .contact {
+      padding: 42px 0;
+    }
+
+    .contact-inner {
+      display: block;
+      padding: 38px 28px;
+    }
+
+    .contact-copy {
+      margin-top: 28px;
+    }
+
+    .footer-inner {
+      padding: 25px 0;
+      flex-wrap: wrap;
+    }
+
+    .footer-inner p {
+      order: 3;
+      flex-basis: 100%;
+    }
   }
+
   @media (prefers-reduced-motion: reduce) {
-    :root { scroll-behavior: auto; }
-    *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+    :root {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: .01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: .01ms !important;
+    }
   }
 </style>
