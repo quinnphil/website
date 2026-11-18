@@ -17,7 +17,7 @@ The page content and LinkedIn contact link are in `src/pages/index.astro`.
 
 ## Adding bookmarks
 
-Bookmarks appear publicly on the Bookmarks page, even though the repository is private. Add one Markdown (`.md`) file per bookmark in `src/content/bookmarks/`. On GitHub, open that folder, choose **Add file → Create new file** (or **Upload files**), and commit it to `main`. For example:
+Bookmarks appear publicly on the Bookmarks page. Add one Markdown (`.md`) file per bookmark in `src/content/bookmarks/`. On GitHub, open that folder, choose **Add file → Create new file** (or **Upload files**), and commit it to `main`. For example:
 
 ```markdown
 ---
@@ -32,7 +32,7 @@ Give each file a unique name, such as `useful-article.md`. The title and HTTP(S)
 
 ## GitHub Pages
 
-The deployment workflow builds and publishes the site on pushes to `main`. In the repository's **Settings → Pages**, select **GitHub Actions** as the source and set the custom domain to `philquinn.co.uk`. If another GitHub Pages site currently uses that domain, remove it from that site's Pages settings first; this may cause a brief interruption. A private repository requires a GitHub plan that supports Pages from private repositories. The published website itself is public.
+The deployment workflow builds and publishes the site on pushes to `main`. In the repository's **Settings → Pages**, select **GitHub Actions** as the source and set the custom domain to `philquinn.co.uk`. If another GitHub Pages site currently uses that domain, remove it from that site's Pages settings first; this may cause a brief interruption. 
 
 The existing apex DNS must point to GitHub Pages. To support `www.philquinn.co.uk` as well, configure a `www` CNAME record pointing to `quinnphil.github.io`. Once the domain and certificate are ready, enable **Enforce HTTPS** in Pages settings. Certificate provisioning can take up to 24 hours.
 
