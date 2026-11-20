@@ -1,0 +1,301 @@
+html:root {
+  color-scheme: light;
+  background: #fff;
+  color: #242824;
+}
+
+#odyssey {
+  --bg: #fff;
+  --surface: #f2f2f2;
+  --accent: #294c37;
+  --ink: #242824;
+  --muted: #656b65;
+  --line: rgb(36 40 36 / 16%);
+  --theme-primary: #294c37;
+  --theme-primary-hover: #365f46;
+  --theme-on-primary: #fff;
+  --theme-bg: #fff;
+  --theme-on-bg: #242824;
+  --theme-surface-1: #f2f2f2;
+  --theme-on-surface-1: #242824;
+  --theme-surface-2: #dcebdc;
+  --theme-on-surface-2: #242824;
+  --theme-shape-radius: 1.5rem;
+  --theme-button-border-radius: 3rem;
+  color: var(--ink);
+  background: var(--bg);
+  font-family: "Lato", "Avenir Next", Avenir, "Segoe UI", sans-serif;
+}
+
+#odyssey *,
+#odyssey *::before,
+#odyssey *::after {
+  box-sizing: border-box;
+}
+
+#odyssey a:focus-visible,
+#odyssey button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+#odyssey ::selection {
+  color: var(--theme-on-primary);
+  background: var(--theme-primary);
+}
+
+#odyssey .skip-link {
+  color: var(--theme-on-primary);
+  background: var(--theme-primary);
+}
+
+#odyssey .site-header {
+  background: rgb(255 255 255 / 92%);
+  border-bottom-color: var(--line);
+}
+
+#odyssey .brand-mark span,
+#odyssey .header-inner nav a:hover,
+#odyssey .header-inner nav a[aria-current="page"],
+#odyssey .text-link:hover,
+#odyssey .site-footer a:hover {
+  color: var(--accent);
+}
+
+#odyssey .brand-name {
+  color: var(--muted);
+}
+
+#odyssey .header-inner nav a,
+#odyssey .footer-inner p,
+#odyssey .footer-inner > a:not(.footer-brand) {
+  color: #515851;
+}
+
+#odyssey .header-contact,
+#odyssey .button-dark {
+  color: var(--theme-on-primary);
+  background: var(--theme-primary);
+  border-radius: var(--theme-button-border-radius);
+}
+
+#odyssey .header-contact:hover,
+#odyssey .button-dark:hover {
+  background: var(--theme-primary-hover);
+}
+
+#odyssey .hero,
+#odyssey .page-intro {
+  background: radial-gradient(ellipse at 76% 45%, #edf4ed 0, var(--bg) 58%);
+}
+
+#odyssey h1,
+#odyssey h2,
+#odyssey h3 {
+  color: var(--ink);
+  font-family: "Roboto Serif", Georgia, "Times New Roman", serif;
+  letter-spacing: -0.035em;
+}
+
+#odyssey h1,
+#odyssey h2 {
+  font-weight: 700;
+}
+
+#odyssey h3 {
+  font-weight: 500;
+}
+
+#odyssey h1 em,
+#odyssey h2 em {
+  color: var(--accent);
+  font-weight: inherit;
+}
+
+#odyssey .hero-intro,
+#odyssey .intro p:not(.eyebrow),
+#odyssey .service-card p,
+#odyssey .project-description p,
+#odyssey .about-copy p,
+#odyssey .page-intro > div > p:last-child,
+#odyssey .bookmark p,
+#odyssey .empty {
+  color: #555d56;
+}
+
+#odyssey .network-lines {
+  stroke: #738a77;
+}
+
+#odyssey .hero-art::before {
+  background: radial-gradient(circle, rgb(41 76 55 / 10%), transparent 68%);
+}
+
+#odyssey .network-points {
+  fill: #294c37;
+}
+
+#odyssey .orbit {
+  border-color: rgb(41 76 55 / 24%);
+}
+
+#odyssey .orbit-two {
+  border-color: rgb(41 76 55 / 16%);
+}
+
+#odyssey .orbit::after,
+#odyssey .orbit-core i {
+  background: var(--accent);
+  box-shadow: 0 0 15px rgb(41 76 55 / 35%);
+}
+
+#odyssey .orbit-two::after {
+  background: #fff;
+  box-shadow: 0 0 12px rgb(41 76 55 / 28%);
+}
+
+#odyssey .orbit-core {
+  color: var(--accent);
+  border-color: rgb(41 76 55 / 40%);
+  background: radial-gradient(circle, #fff, #e8f0e8 72%);
+  box-shadow: 0 0 55px rgb(41 76 55 / 10%);
+}
+
+#odyssey .data-card {
+  color: var(--ink);
+  border-color: rgb(36 40 36 / 18%);
+  border-radius: 1rem;
+  background: rgb(255 255 255 / 92%);
+}
+
+#odyssey .data-card-top,
+#odyssey .chart-bottom {
+  color: #5b635b;
+}
+
+#odyssey .chart-bars {
+  border-bottom-color: var(--line);
+}
+
+#odyssey .chart-bars span {
+  background: #a7b9a8;
+}
+
+#odyssey .chart-bars span:nth-last-child(-n+2) {
+  background: var(--accent);
+}
+
+#odyssey .art-note,
+#odyssey .hero-footer {
+  color: #515851;
+}
+
+#odyssey .hero-footer {
+  border-top-color: var(--line);
+}
+
+#odyssey .intro,
+#odyssey .work,
+#odyssey .collection {
+  background: var(--surface);
+}
+
+#odyssey .intro h2 span {
+  color: #687168;
+}
+
+#odyssey .section-heading > p,
+#odyssey .collection-heading > p {
+  color: var(--muted);
+}
+
+#odyssey .service-card {
+  border-color: var(--line);
+  background: var(--surface);
+}
+
+#odyssey .service-card:hover {
+  border-color: rgb(41 76 55 / 55%);
+  background: #e8f0e8;
+}
+
+#odyssey .card-top,
+#odyssey .card-detail {
+  color: #515851;
+}
+
+#odyssey .card-detail,
+#odyssey .bookmark {
+  border-color: var(--line);
+}
+
+#odyssey .project {
+  border-color: var(--line);
+}
+
+#odyssey .project-description span,
+#odyssey .bookmark li {
+  color: #294c37;
+}
+
+#odyssey .contact-inner {
+  color: var(--theme-on-surface-2);
+  background: var(--theme-surface-2);
+  border-radius: var(--theme-shape-radius);
+}
+
+#odyssey .contact .eyebrow,
+#odyssey .contact h2,
+#odyssey .contact h2 em,
+#odyssey .contact-copy p {
+  color: var(--theme-on-surface-2);
+}
+
+#odyssey .button-light {
+  color: var(--theme-primary);
+  border-radius: var(--theme-button-border-radius);
+}
+
+#odyssey .button-light:hover {
+  background: #f2f2f2;
+}
+
+#odyssey .site-footer {
+  color: #f4f5f2;
+  background: #242824;
+}
+
+#odyssey .footer-inner p,
+#odyssey .footer-inner > a:not(.footer-brand) {
+  color: #d0d5d0;
+}
+
+#odyssey .page-intro {
+  background: #fff;
+}
+
+#odyssey .filters button {
+  border-color: rgb(36 40 36 / 24%);
+  color: #424a43;
+}
+
+#odyssey .filters button:hover,
+#odyssey .filters button[aria-pressed="true"] {
+  border-color: var(--accent);
+}
+
+#odyssey .filters button[aria-pressed="true"] {
+  color: var(--theme-on-primary);
+  background: var(--theme-primary);
+}
+
+#odyssey .bookmark li {
+  border-color: rgb(41 76 55 / 24%);
+  background: rgb(41 76 55 / 8%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:root {
+    scroll-behavior: auto;
+  }
+}

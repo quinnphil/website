@@ -1,6 +1,7 @@
 # PQ Data Analytics
 
 A static landing page for Phil Quinn, built with [Astro](https://astro.build/).
+Its visual theme is adapted from [Odyssey Theme](https://github.com/treefarmstudio/odyssey-theme).
 
 ## Getting started
 

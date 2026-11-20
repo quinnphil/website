@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
+import '../styles/odyssey.css';
 
 const bookmarks = (await getCollection('bookmarks'))
   .sort((a, b) => a.data.title.localeCompare(b.data.title));
@@ -17,11 +18,11 @@ const booking = 'https://cal.com/philquinn';
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="A collection of technical resources and interesting links curated by Phil Quinn." />
-    <meta name="theme-color" content="#050419" />
+    <meta name="theme-color" content="#ffffff" />
     <title>Bookmarks | Phil Quinn</title>
     <link rel="icon" type="image/svg+xml" href={`${home}favicon.svg`} />
   </head>
-  <body>
+  <body id="odyssey">
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="container header-inner">
